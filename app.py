@@ -27,5 +27,5 @@ def template_json():
             templates = requests.get(template_source.strip()).json()[
                 'templates']
             all_templates.append(templates)
-    result = {"version": "2", "templates": templates}
+    result = {"version": "2", "templates": all_templates}
     return json.dumps(result)
